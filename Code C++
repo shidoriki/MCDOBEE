@@ -1,0 +1,83 @@
+//McdoBee Restaurant Menu
+#include<iostream>
+using namespace std;
+int main()
+{
+	string CustomerName;
+	
+	double Cheeseburger = 75.00;
+	double DoubleCheeseburger = 80.25;
+	double QuarterPounder = 125.50;
+	double ChickenAlaKing = 99;
+	double ChickenJoy = 105;
+	double Coke = 30;
+	
+	int Qty1, Qty2, Qty3, Qty4, Qty5, Qty6, sum, prod, Payment ,diff;
+	
+	
+	cout<< "                       WELCOME TO MCDOBEE RESTAURANT WHERE WE SERVE EXQUISITE FOOD TO YOUR DELIGHT :> "<<endl;
+	cout<< "\nEnter Customer Name: ";
+	getline(cin,CustomerName);
+	cout<< "\n!*-----------------------------------------------------------MENU-----------------------------------------------------*!"<<endl;
+	cout<< "\n                                  1.) Cheeseburger                       75 PHP EACH"<<endl;
+	cout<< "                                  2.) Double Cheeseburger                80.25 PHP EACH"<<endl;
+	cout<< "                                  3.) Quarter Pounder                    125.50 PHP EACH"<<endl;
+	cout<< "                                  4.) Chicken Ala King                   99 PHP EACH"<<endl;
+	cout<< "                                  5.) Chicken Joy                        105 PHP EACH"<<endl;
+	cout<< "                                  6.) Coke                               30 PHP EACH"<<endl;
+	cout<< "\n!*--------------------------------------------------------------------------------------------------------------------*!"<<endl;
+	
+	cout<< "\nOrder #1 Cheeseburger: "<<endl;
+	cout<< "Enter Quantity: ";
+		cin>>Qty1;
+	cout<< "\nOrder #2 Double Cheeseburger: "<<endl;
+	cout<< "Enter Quantity: ";
+		cin>>Qty2;
+	cout<< "\nOrder #3 Quarter Pounder: "<<endl;
+	cout<< "Enter Quantity: ";	
+		cin>>Qty3;
+	cout<< "\nOrder #4 Chicken Ala King: "<<endl;
+	cout<< "Enter Quantity: ";	
+		cin>>Qty4;
+	cout<< "\nOrder #5 Chicken Joy: "<<endl;
+	cout<< "Enter Quantity: ";	
+		cin>>Qty5;
+	cout<< "\nOrder #6 Coke: "<<endl;
+	cout<< "Enter Quantity: ";	
+		cin>>Qty6;
+	cout<< "\n!*----------------------------------------------------------ORDERS----------------------------------------------------*!"<<endl;
+
+	prod = Qty1 * Cheeseburger;
+	cout<< "\n                    The Price of Order #1 Cheeseburger:                             "<<prod<< " Pesos"<<endl;
+	
+	prod = Qty2 * DoubleCheeseburger;
+	cout<< "\n                    The Price of Order #2 Double Cheeseburger:                      "<<prod<< " Pesos"<<endl;
+	
+	prod = Qty3 * QuarterPounder;	
+	cout<< "\n                    The Price of Order #3 Quarter Pounder:                          "<<prod<< " Pesos"<<endl;
+	
+	prod = Qty4 * ChickenAlaKing;	
+	cout<< "\n                    The Price of Order #4 Chicken Ala King:                         "<<prod<< " Pesos"<<endl;
+	
+	prod = Qty5 * ChickenJoy;
+	cout<< "\n                    The Price of Order #5 Chicken Joy:                              "<<prod<< " Pesos"<<endl;
+	
+	prod = Qty6 * Coke;
+	cout<< "\n                    The Price of Order #6 Coke are:                                 "<<prod<< " Pesos"<<endl;
+	
+	cout<< "\n!*--------------------------------------------------------------------------------------------------------------------*!"<<endl;
+	
+	cout<< "\n!*----------------------------------------------------------RECEIPT----------------------------------------------------*!"<<endl;
+	sum = Cheeseburger + DoubleCheeseburger + QuarterPounder + ChickenAlaKing + ChickenJoy + Coke;
+	cout<< "\nThe Total Price of all The Orders are equivalent to: "<<sum<<endl;
+	
+	cout<< "\nEnter Payment: ";
+	cin>>Payment;
+	
+	diff = Payment - sum;
+	cout<< "\nYou Have a Change Totalling to: "<<diff<< " Pesos "<<endl;
+	cout<< "\n!*--------------------------------------------------------------------------------------------------------------------*!"<<endl;
+	
+	return 0;
+	
+}
